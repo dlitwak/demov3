@@ -227,6 +227,7 @@ slideTime2();
 	<script>
 	$(function() {
 		var stop = false;
+
 		$( "#accordion h3" ).click(function( event ) {
 			if ( stop ) {
 				event.stopImmediatePropagation();
@@ -254,7 +255,7 @@ slideTime2();
 			showOn: "button",
 			buttonImage: "images/calendar.gif",
 			buttonImageOnly: true,
-			dateFormat: 'yy-mm-dd'
+			dateFormat: 'yy-dd-mm'
 		});
 	});
 		$(function() {
@@ -262,7 +263,7 @@ slideTime2();
 			showOn: "button",
 			buttonImage: "images/calendar.gif",
 			buttonImageOnly: true,
-			dateFormat: 'yy-mm-dd'
+			dateFormat: 'yy-dd-mm'
 		});
 	});
 	</script>
