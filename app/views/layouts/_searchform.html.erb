@@ -1,0 +1,108 @@
+		<div id="sharing_hide" style="display:block">
+				<%= form_tag results_path, :method => 'get', :onsubmit =>"rememberinput('start_location', 'end_location')", :id => 'searchform' do %>
+						<div id="locations" style="margin-top: 20px;">
+							<div id="start-address" class="round">
+								START ADDRESS
+								<div id="startstreet">
+									<label for="start_address">Start Address </label><input id="start_address" name="start_address"></br>
+								</div>
+								<div id="startcity">
+									<label for="start">City </label>
+									<div class="ui-widget"style="display:inline">
+										<input style="width:150px;" id="start" name="start_location">
+									</div>
+								</div>
+								
+							</div>
+							<div id="end-address" class="round">
+								END ADDRESS
+								<div id="endstreet">
+									<label for="end_address">Street </label><input id="end_address" name="end_address" ></br>
+								</div>
+								<div id="endcity">								
+									<label for="end">City</label>
+									<div class="ui-widget" style="display:inline">
+										<input style="width:150px;" id="end" name="end_location">
+									</div></br>
+								</div>						
+							</div>
+</br></br></br></br></br></br></br></br>
+						</div>
+						<div id="dates" style="margin-top: 20px;">
+							<div style="display:inline"> 
+								<label for="start_date" style="font-weight:bold font-family: Arial">Start Date</label>
+								<input type="text" name="start_date" id="start_date" />
+							</div>
+							<div style="display:inline" id="end_date_hide">
+								<label for="return_date">Return Date</label>
+								<input type="text" name="return_date" id="return_date" />
+							</div>
+						</div>
+						</br>
+						
+						<%= render 'layouts/transportationtable' %>
+						
+						<div id="choice4">
+						<table style="font-weight:bold; padding: 10px;">
+							<tr>
+								<td style="width: 180px; align: center;">
+									<input type="checkbox" id="nonstopcheckbox" name="nonstopcheckbox" value="Non-stops only" align="middle"/>
+									<label for="nonstopcheckbox" >Non-stops only</label>
+								</td>
+								<td style="width: 200px;" >
+									<input type="checkbox" id="flexdates" name="flexdatescheckbox" value="My dates are flexible" align="middle"/>
+									<label for="flexdates">My dates are flexible</label>
+								</td>
+								<td>
+									<select name="travelers">
+									  <option value="1">1 Traveler</option>
+									  <option value="2">2 Travelers</option>
+									  <option value="3">3 Travelers</option>
+									  <option value="4">4 Travelers</option>
+									  <option value="5">5 Travelers</option>
+									  <option value="6">6 Travelers</option>
+									</select>
+									
+								</td>
+								<td>
+									<select name="bags">
+									  <option value="1">1 Checked Bag</option>
+									  <option value="2">2 Checked Bags</option>
+									  <option value="3">3 Checked Bags</option>
+									  <option value="4">4 Checked Bags</option>
+									</select>
+									
+								</td>
+							</tr>
+						</table>
+						</div>
+						<div class="actions">
+							<div class="demo"> 
+								<%= submit_tag "Search" %>
+							</div> 
+						</div>
+
+					<% end %>
+
+				</div>
+				<div id="coming_soon_hide" style="display:none">
+				Coming Soon
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+				
+				</div>
