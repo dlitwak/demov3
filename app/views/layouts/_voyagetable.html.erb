@@ -37,14 +37,13 @@
 										Arrival:"+voyage.end_time.strftime("%a at %I:%M%p")+", "+voyage.end_date.strftime("%m/%d/%y")+"</br> 
 										Transit Time: "+voyage.transit_time.to_s) %>
 									<% end %>	
-									<div id="details">
-										<div class="dialog" title="Voyage Details">
-											<%= render 'layouts/dialog', :voyages => @voyages, :result => result %>
-										</div>
+									<div id="details" class="round">
+									<% start_ad = params[:start_address] %>
+								
+									<%= link_to 'GO', URI.escape('results/'+result.id.to_s+'?start_address='+params[:start_address]+','+params[:start_location]+'&end_address='+params[:end_address]+','+params[:end_location]+'&departure='+result.departure+'&arrival='+result.arrival), :class =>"ui-state-default ui-corner-all gotoresult" %>
+
 									</div>
-									
-									<%= link_to 'GO', URI.escape('results/'+result.id.to_s+'?start_address='+params[:start_address]+','+params[:start_location]+'&end_address='+params[:end_address]+','+params[:end_location]+'&departure='+result.departure+'&arrival='+result.arrival) %>
-									<button class="details-button">View</button>
+							
 									<div class="round2" id="info">
 									Departure: <%= result.start_time.strftime("%a at %I:%M%p") %>, <%= result.start_date.strftime("%m/%d/%y") %>  </br>
 									Arrival: <%= result.end_time.strftime("%a at %I:%M%p") %>, <%= result.end_date.strftime("%m/%d/%y") %>  </br>

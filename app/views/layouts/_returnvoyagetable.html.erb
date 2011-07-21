@@ -44,7 +44,8 @@
 									</div>
 									
 									<%= link_to 'GO', URI.escape('results/'+result.id.to_s+'?start_address='+params[:start_address]+','+params[:start_location]+','+params[:start_country]+'&end_address='+params[:end_address]+','+params[:end_location]+','+params[:end_country]) %>
-									<button class="details-button">View</button>
+									<button url = 'results/'+result.id.to_s+'?start_address='+params[:start_address]+','+params[:start_location]+','+params[:start_country]+'&end_address='+params[:end_address]+','+params[:end_location]+','+params[:end_country]'>View</button>
+									<button> </button>
 									<div class="round2" id="info">
 									Departure: <%= result.start_time.strftime("%a at %I:%M%p") %>, <%= result.start_date.strftime("%m/%d/%y") %>  </br>
 									Arrival: <%= result.end_time.strftime("%a at %I:%M%p") %>, <%= result.end_date.strftime("%m/%d/%y") %>  </br>

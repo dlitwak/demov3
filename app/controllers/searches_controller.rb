@@ -28,7 +28,7 @@ class SearchesController < ApplicationController
   end
 
   def results
-
+@start_address = params[:start_address]
 @startresults = Result.all
 @returnresults = Result.all
 #@startresults = Result.where("(NOT(train) OR :traincheckbox)AND (NOT(bus) OR :buscheckbox)AND(NOT(plane) OR :planecheckbox)AND(NOT(ferry) OR :ferrycheckbox) AND start_date = :start_date AND start_location = :start_location AND end_location = :end_location", {:traincheckbox=> params[:traincheckbox], :planecheckbox=> params[:planecheckbox], :buscheckbox=> params[:buscheckbox],:ferrycheckbox=> params[:ferrycheckbox],:taxicheckbox=> params[:taxicheckbox], :start_date => params[:start_date], :end_date=>params[:end_date],:start_location => params[:start_location], :end_location => params[:end_location]}).order(params[:sort])
