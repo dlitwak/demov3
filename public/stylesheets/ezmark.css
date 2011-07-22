@@ -22,7 +22,7 @@
 	*display: inline;
 }
 .ez-checked-green { background-position: 0 -18px; }
-.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; height: 62px; width:72px;}
 
 
 .ez-checkbox-train {

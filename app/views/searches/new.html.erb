@@ -58,19 +58,18 @@ $('#planecheckbox').ezMark({checkboxCls: 'ez-checkbox-plane', checkedCls: 'ez-ch
 $('#traincheckbox').ezMark({checkboxCls: 'ez-checkbox-train', checkedCls: 'ez-checked-train', width: '73px', height: '68px'});
 $('#carcheckbox').ezMark({checkboxCls: 'ez-checkbox-car', checkedCls: 'ez-checked-car', width: '73px', height: '68px'});
 $('#taxicheckbox').ezMark({checkboxCls: 'ez-checkbox-taxi', checkedCls: 'ez-checked-taxi', width: '73px', height: '68px'});
-
 	$(function() {
 		$( "#accordion" ).accordion();
 	});
 
 $(function()
 {
-	$('#start_date').datepicker({dateFormat: 'yy-dd-mm', minDate: '2011-12-09', maxDate: '2011-12-09'});
+	$('#start_date').datepicker({dateFormat: 'yy-dd-mm', showOn: "button", buttonImageOnly: true, buttonImage: "images/calendar.gif", minDate: '2011-12-09', maxDate: '2011-12-09'});
 });
 
 $(function()
 {
-	$('#return_date').datepicker({dateFormat: 'yy-dd-mm', minDate: '2011-19-09', maxDate: '2011-19-09'});
+	$('#return_date').datepicker({dateFormat: 'yy-dd-mm', showOn: "button", buttonImageOnly: true, buttonImage: "images/calendar.gif", minDate: '2011-19-09', maxDate: '2011-19-09'});
 });
 	$(function() {
 		var availableTags = [
@@ -116,3 +115,18 @@ $(function()
 			.next().addClass("ui-helper-reset ui-widget-content ui-corner-bottom");
 	});
 	</script>
+<script>
+jQuery(document).ready(function(){
+ //param 1 is the CSS class to apply when the textbox is empty
+ //param 2 is the "normal" css state of the textbox (if any) typically it will be null but you can use it if it fits your needs..
+//param 3 is the watermark text to apply when the textbox is empty 
+	$("#start_address").waterMarker("WaterMark", null, "City Center");	
+	$("#end_address").waterMarker("WaterMark", null,"City Center");	
+$("#start_date").waterMarker("WaterMark", null,"Dates Currently Restricted");
+$("#return_date").waterMarker("WaterMark", null,"Dates Currently Restricted");
+$("#start").waterMarker("WaterMark", null,"LIMITED CITIES");
+$("#end").waterMarker("WaterMark", null,"LIMITED CITIES");
+
+});
+
+</script>

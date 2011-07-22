@@ -47,6 +47,7 @@
     		$this.addClass(defaultOpt.hideCls).wrap(wrapTag).change(function() {
     			if( $(this).is(':checked') ) { 
     				$(this).parent().addClass(defaultOpt.checkedCls); 
+				$(this).addClass(defaultOpt.checkedCls); 
     			} 
     			else {	$(this).parent().removeClass(defaultOpt.checkedCls); 	}
     		});

@@ -9,8 +9,8 @@
 			<input type="checkbox" form="searchform" id="planecheckbox" name="planecheckbox" value="1" align="middle"  class="submittable"/>
 		
 		</td>
-		<td><input type="hidden" form="searchform" name="buscheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="buscheckbox" name="buscheckbox" value="1" align="middle" class="submittable"/>
+		<td><input type="hidden" form="searchform" name="buscheckbox" value="0" class="submittable ez-checkbox-bus"/>
+			<input type="checkbox" form="searchform" id="buscheckbox" name="buscheckbox" value="1" align="middle" class="submittable ez-checkbox-bus"/>
 		
 		</td>
 		<td><input type="hidden" form="searchform" name="ferrycheckbox" value="0" class="submittable"/>
@@ -32,5 +32,9 @@
 		</td>
 	</tr>
 </table>
+
+<script>
+$('input[name=buscheckbox]').css('width', 72px);
+</script>
 
 </div>
