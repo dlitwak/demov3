@@ -1,37 +1,40 @@
-<div class="transportation-table">
-<table>
-	<tr align="center">
-		<td><input type="hidden" form="searchform" name="traincheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="traincheckbox" name="traincheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
-		<td><input type="hidden" form="searchform" name="planecheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="planecheckbox" name="planecheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
-		<td><input type="hidden" form="searchform" name="buscheckbox" value="0" class="submittable ez-checkbox-bus"/>
-			<input type="checkbox" form="searchform" id="buscheckbox" name="buscheckbox" value="1" align="middle" class="submittable ez-checkbox-bus"/>
-		
-		</td>
-		<td><input type="hidden" form="searchform" name="ferrycheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="ferrycheckbox" name="ferrycheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
+<div class="transportation-table round">
+Select Transportation Options:
+<div class="inner-transpo round">
+	<table>
+		<tr align="center">
+			<td><input type="hidden" form="searchform" name="traincheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform" id="traincheckbox" name="traincheckbox" value="1" align="middle"  class="submittable"/>
+			<div class="transpo-title">Train</div>
+			</td>
+			<td><input type="hidden" form="searchform" name="planecheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform" id="planecheckbox" name="planecheckbox" value="1" align="middle"  class="submittable"/>
+			<div class="transpo-title">Plane</div>
+			</td>
+			<td><input type="hidden" form="searchform" name="buscheckbox" value="0" class="submittable ez-checkbox-bus"/>
+				<input type="checkbox" form="searchform" id="buscheckbox" name="buscheckbox" value="1" align="middle" class="submittable ez-checkbox-bus"/>
+			<div class="transpo-title">Bus</div>
+			</td>
+			<td><input type="hidden" form="searchform" name="ferrycheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform" id="ferrycheckbox" name="ferrycheckbox" value="1" align="middle"  class="submittable" tooltip="hello"/>
+			<div class="transpo-title">Ferry</div>
+			</td>
 
-		<td><input type="hidden" form="searchform" name="carcheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform"  id="carcheckbox" name="carcheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
-		<td><input type="hidden" form="searchform" name="bikecheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="bikecheckbox" name="bikecheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
-		<td><input type="hidden" form="searchform" name="taxicheckbox" value="0" class="submittable"/>
-			<input type="checkbox" form="searchform" id="taxicheckbox" name="taxicheckbox" value="1" align="middle"  class="submittable"/>
-		
-		</td>
-	</tr>
-</table>
+			<td><input type="hidden" form="searchform" name="carcheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform"  id="carcheckbox" name="carcheckbox" value="1" align="middle"  class="submittable"/>
+			<div class="transpo-title">Car</div>
+			</td>
+			<td><input type="hidden" form="searchform" name="bikecheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform" id="bikecheckbox" name="bikecheckbox" value="1" align="middle"  class="submittable"/>
+			<div class="transpo-title">Bike</div>
+			</td>
+			<td><input type="hidden" form="searchform" name="taxicheckbox" value="0" class="submittable"/>
+				<input type="checkbox" form="searchform" id="taxicheckbox" name="taxicheckbox" value="1" align="middle"  class="submittable"/>
+			<div class="transpo-title">Walk</div>
+			</td>
+		</tr>
+	</table>
+</div>
 
 <script>
 $('input[name=buscheckbox]').css('width', 72px);

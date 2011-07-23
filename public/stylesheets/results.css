@@ -55,6 +55,21 @@ margin-top: 300px;
 margin-left: auto;
 margin-right: auto;
 }
+
+.transportation-table{
+background: #F2F2F2;
+padding: 13px;
+margin-left: auto;
+margin-right: auto;
+}
+.transpo-title{
+font-weight:bold;
+}
+.inner-transpo{
+background: white;
+padding: 7px;
+}
+
 .transportation-table table tr td {
 
 padding: 0px;
@@ -459,4 +474,20 @@ height: 900px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
+}
+
+#start_date{
+width: 150px;
+}
+
+#return_date{
+width: 150px;
+}
+
+#start-date-box{
+
+}
+
+#return-date-box{
+
 }
