@@ -49,7 +49,9 @@ margin-top: 300px;
 .ui-accordion { font-size: 12px;  }
 
 #dates{
-
+background: #F2F2F2;
+padding: 13px;
+margin-top: 10px;
 }
 #trip_type{
 margin-left: auto;
@@ -68,6 +70,7 @@ font-weight:bold;
 .inner-transpo{
 background: white;
 padding: 7px;
+
 }
 
 .transportation-table table tr td {
@@ -491,3 +494,4 @@ width: 150px;
 #return-date-box{
 
 }
+
